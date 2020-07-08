@@ -1,0 +1,94 @@
+.parent{
+	-fx-background-color : transparent;
+}
+.dark-panel{
+	-fx-background-color : #05071F;
+}
+.light-panel{
+	-fx-background-color : RGBa(255,255,255,0.4);
+}
+.main-btns{
+	-fx-background-color : transparent;
+	-fx-background-radius : 0px;
+	-fx-text-fill : transparent;
+}
+.icons{
+	-fx-fill : #596575;
+}
+.main-btns:hover{
+	-fx-background-color : transparent;
+	-fx-background-radius : 0px;
+	-fx-border-color : #F3A978;
+	-fx-border-width : 0px 0px 4px 0px;
+	-fx-border-radius : 0px;
+}
+.main-btns:hover .icons{
+	-fx-fill : white;
+}
+.buttons{
+	-fx-background-color : #596575;
+	-fx-background-radius : 5px;
+	-fx-text-fill : white;
+}
+.buttons:hover{
+	-fx-background-color : #F3A978;
+}
+.circle{
+	-fx-background-radius : 100%;
+	-fx-border-radius : 100%;
+	-fx-border-color : #596575;
+	-fx-border-width : 3px;
+}
+.online{
+	-fx-background-color : #00CC33;
+	-fx-background-radius : 100%;
+}
+.awesome{
+	-fx-background-color : transparent;
+	-fx-background-radius : 0px;
+	-fx-text-fill : transparent;
+}
+.iconsitem{
+	-fx-fill : #596575;
+}
+.awesome:hover{
+	-fx-background-color : #F3A978;
+}
+.awesome:hover .iconsitem{
+	-fx-fill : white;
+}
+.btn{
+	-fx-background-color : #EBE8F9;
+}
+.btn:hover{
+	-fx-background-color : #BDBBC3;
+}
+.btn:pressed{
+	-fx-background-color : #EBE8F9;
+}
+.container{
+	-fx-background-color : #fff;
+}
+.menu{
+	 -fx-background-color : #EBE8F9;
+}
+.info,.titre,.elements{
+	 -fx-background-color : #F3F3F3;
+}
+.dark{
+	-fx-text-fill : #323232;
+}
+.search{
+	-fx-border-color : #10165F;
+	-fx-background-radius : 5em;
+	-fx-border-radius : 2em;
+}
+.iconsearch{
+	-fx-fill : #596575;
+}
+.tree-table-cell .delete-button {
+    -fx-text-fill: red;
+}
+.tree-table-cell .update-button {
+    -fx-text-fill: black;
+}

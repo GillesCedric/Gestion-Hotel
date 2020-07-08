@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1300.0" styleClass="container" stylesheets="@../application/css/StyleDark.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AcceuilFormController">
+	<children>
+		<VBox alignment="TOP_CENTER" layoutY="-25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="210.0" styleClass="menu">
+			<children>
+				<ImageView fx:id="userProfile" fitHeight="120.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../application/img/développeur.png" />
+					</image>
+					<VBox.margin>
+						<Insets bottom="10.0" top="40.0" />
+					</VBox.margin>
+				</ImageView>
+				<Label fx:id="userName" alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="148.0" styleClass="dark" text="Gilles Cédric">
+					<VBox.margin>
+						<Insets bottom="10.0" />
+					</VBox.margin>
+				</Label>
+				<JFXButton fx:id="acceuilButton" alignment="BASELINE_LEFT" graphicTextGap="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleClicks" prefHeight="50.0" prefWidth="210.0" text="Acceuil">
+					<graphic>
+						<FontAwesomeIcon glyphName="HOME" size="2.5em" styleClass="white" />
+					</graphic>
+					<VBox.margin>
+						<Insets bottom="20.0" />
+					</VBox.margin>
+					<padding>
+						<Insets left="32.0" />
+					</padding>
+					<styleClass>
+						<String fx:value="btn" />
+						<String fx:value="dark" />
+					</styleClass>
+				</JFXButton>
+				<JFXButton fx:id="newReservationButton" alignment="BASELINE_LEFT" graphicTextGap="25.0" layoutX="10.0" layoutY="170.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleClicks" prefHeight="50.0" prefWidth="210.0" text="Nouvelle Reservation">
+					<graphic>
+						<FontAwesomeIcon glyphName="PLUS" size="2.5em" styleClass="white" />
+					</graphic>
+					<VBox.margin>
+						<Insets bottom="20.0" />
+					</VBox.margin>
+					<padding>
+						<Insets left="34.0" />
+					</padding>
+					<styleClass>
+						<String fx:value="btn" />
+						<String fx:value="dark" />
+					</styleClass>
+				</JFXButton>
+				<JFXButton fx:id="listeChambresButton" alignment="BASELINE_LEFT" graphicTextGap="25.0" layoutX="10.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleClicks" prefHeight="50.0" prefWidth="210.0" text="Liste des chambres">
+					<graphic>
+						<FontAwesomeIcon glyphName="BED" size="2.5em" styleClass="white" />
+					</graphic>
+					<VBox.margin>
+						<Insets bottom="20.0" />
+					</VBox.margin>
+					<padding>
+						<Insets left="24.0" />
+					</padding>
+					<styleClass>
+						<String fx:value="btn" />
+						<String fx:value="dark" />
+					</styleClass>
+				</JFXButton>
+				<JFXButton fx:id="listeClientsButton" alignment="BASELINE_LEFT" graphicTextGap="25.0" layoutX="10.0" layoutY="359.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleClicks" prefHeight="50.0" prefWidth="210.0" text="Liste des clients">
+					<graphic>
+						<FontAwesomeIcon glyphName="BOOK" size="2.5em" styleClass="white" />
+					</graphic>
+					<padding>
+						<Insets left="30.0" />
+					</padding>
+					<styleClass>
+						<String fx:value="btn" />
+						<String fx:value="dark" />
+					</styleClass>
+					<VBox.margin>
+						<Insets bottom="20.0" />
+					</VBox.margin>
+				</JFXButton>
+				<JFXButton fx:id="parametresButton" alignment="BASELINE_LEFT" graphicTextGap="25.0" layoutX="10.0" layoutY="270.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleClicks" prefHeight="50.0" prefWidth="210.0" text="Paramètes">
+					<graphic>
+						<FontAwesomeIcon glyphName="SLIDERS" size="2.5em" styleClass="white" />
+					</graphic>
+					<VBox.margin>
+						<Insets bottom="20.0" />
+					</VBox.margin>
+					<padding>
+						<Insets left="32.0" />
+					</padding>
+					<styleClass>
+						<String fx:value="btn" />
+						<String fx:value="dark" />
+					</styleClass>
+				</JFXButton>
+				<JFXButton fx:id="deconnexionButton" alignment="BASELINE_LEFT" graphicTextGap="25.0" layoutX="10.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleClicks" prefHeight="50.0" prefWidth="210.0" text="Deconnexion">
+					<graphic>
+						<FontAwesomeIcon glyphName="SIGN_OUT" size="2.5em" styleClass="white" />
+					</graphic>
+					<VBox.margin>
+						<Insets bottom="20.0" />
+					</VBox.margin>
+					<padding>
+						<Insets left="30.0" />
+					</padding>
+					<styleClass>
+						<String fx:value="btn" />
+						<String fx:value="dark" />
+					</styleClass>
+				</JFXButton>
+			</children>
+		</VBox>
+		<Label layoutX="228.0" layoutY="31.0" prefHeight="27.0" prefWidth="250.0" styleClass="dark" text="Informations sur l'hôtel" textFill="#323232">
+			<font>
+				<Font name="Arial" size="24.0" />
+			</font>
+		</Label>
+		<HBox alignment="CENTER" layoutX="228.0" layoutY="78.0" prefHeight="80.0" prefWidth="1050.0" spacing="60.0" styleClass="info">
+			<children>
+				<VBox alignment="CENTER" prefHeight="80.0" prefWidth="148.0">
+					<children>
+						<Label fx:id="nombreChambresTotal" alignment="CENTER" prefHeight="50.0" prefWidth="145.0" text="60" textFill="#2a73ff">
+							<font>
+								<Font name="System Bold" size="30.0" />
+							</font>
+						</Label>
+						<Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="148.0" styleClass="dark" text="Nombre de chambres total" textFill="#c2bcbc" />
+					</children>
+					<HBox.margin>
+						<Insets left="10.0" />
+					</HBox.margin>
+				</VBox>
+				<VBox alignment="CENTER" layoutX="20.0" layoutY="10.0" prefHeight="80.0" prefWidth="148.0">
+					<children>
+						<Label fx:id="nombreClientsTotal" alignment="CENTER" prefHeight="50.0" prefWidth="145.0" text="60" textFill="#26bfbc">
+							<font>
+								<Font name="System Bold" size="30.0" />
+							</font>
+						</Label>
+						<Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="148.0" styleClass="dark" text="Nombre de clients total" textFill="#c2bcbc" />
+					</children>
+					<HBox.margin>
+						<Insets left="10.0" />
+					</HBox.margin>
+				</VBox>
+				<VBox alignment="CENTER" layoutX="168.0" layoutY="10.0" prefHeight="80.0" prefWidth="175.0">
+					<children>
+						<Label fx:id="nombreChambresOccupe" alignment="CENTER" prefHeight="50.0" prefWidth="145.0" text="60" textFill="#fa5f7e">
+							<font>
+								<Font name="System Bold" size="30.0" />
+							</font>
+						</Label>
+						<Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="172.0" styleClass="dark" text="Nombre de chambres occupées" textFill="#c2bcbc" />
+					</children>
+					<HBox.margin>
+						<Insets left="10.0" />
+					</HBox.margin>
+				</VBox>
+				<VBox alignment="CENTER" layoutX="316.0" layoutY="10.0" prefHeight="80.0" prefWidth="153.0">
+					<children>
+						<Label fx:id="nombreChambresLibre" alignment="CENTER" prefHeight="50.0" prefWidth="145.0" text="60" textFill="#de0000">
+							<font>
+								<Font name="System Bold" size="30.0" />
+							</font>
+						</Label>
+						<Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="148.0" styleClass="dark" text="Nombre de chambres libres" textFill="#c2bcbc" />
+					</children>
+					<HBox.margin>
+						<Insets left="10.0" />
+					</HBox.margin>
+				</VBox>
+			</children>
+		</HBox>
+		<StackPane layoutX="228.0" layoutY="174.0">
+			<children>
+				<Pane fx:id="listeChambresPanel" prefHeight="200.0" prefWidth="200.0">
+					<children>
+						<JFXTreeTableView fx:id="listeChambre" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1050.0" />
+					</children>
+				</Pane>
+				<Pane fx:id="listeClientsPanel" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+					<children>
+						<JFXTreeTableView fx:id="listeClient" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1050.0" />
+					</children>
+				</Pane>
+				<Pane fx:id="acceuilPanelNew" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1050.0">
+					<children>
+						<TreeTableView fx:id="listInformations" prefHeight="400.0" prefWidth="1050.0">
+							<columns>
+								<TreeTableColumn prefWidth="75.0" text="C1" />
+								<TreeTableColumn prefWidth="75.0" text="C2" />
+							</columns>
+						</TreeTableView>
+					</children>
+				</Pane>
+			</children>
+		</StackPane>
+		<JFXTextField fx:id="search" layoutX="1077.0" layoutY="46.0" prefHeight="27.0" prefWidth="175.0" promptText="Search" styleClass="search">
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</JFXTextField>
+		<FontAwesomeIcon glyphName="SEARCH" layoutX="1226.0" layoutY="66.0" size="1.7em" styleClass="iconsearch" />
+		<FontAwesomeIcon fx:id="lockdownButton" glyphName="TIMES" layoutX="1280.0" layoutY="19.0" size="1.5em" styleClass="iconsearch" wrappingWidth="16.714285850524902" />
+	</children>
+</AnchorPane>

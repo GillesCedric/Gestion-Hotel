@@ -1,0 +1,18 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.input{
+	-fx-background-color: #9C2827;
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+}
+#input-button{ 
+	-fx-background-color: #db2130;
+}
+#input-button:hover{
+	-fx-background-color : blue;
+	-fx-border-radius: 10px; 
+	-fx-background-color: #34D911;
+	-fx-font-weight : bold;
+}
+.iconsearch{
+	-fx-fill : white;
+}

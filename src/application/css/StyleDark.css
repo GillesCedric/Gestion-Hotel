@@ -1,0 +1,204 @@
+.parent{
+	-fx-background-color : transparent;
+}
+.dark-panel{
+	-fx-background-color : #45515F;
+}
+.light-panel{
+	-fx-background-color : RGBa(255,255,255,0.4);
+}
+.main-btns{
+	-fx-background-color : transparent;
+	-fx-background-radius : 0px;
+	-fx-text-fill : transparent;
+}
+.icons{
+	-fx-fill : #596575;
+}
+.main-btns:hover{
+	-fx-background-color : transparent;
+	-fx-background-radius : 0px;
+	-fx-border-color : #F3A978;
+	-fx-border-width : 0px 0px 4px 0px;
+	-fx-border-radius : 0px;
+}
+.main-btns:hover .icons{
+	-fx-fill : white;
+}
+.buttons{
+	-fx-background-color : #596575;
+	-fx-background-radius : 5px;
+	-fx-text-fill : white;
+}
+.buttons:hover{
+	-fx-background-color : #F3A978;
+}
+.circle{
+	-fx-background-radius : 100%;
+	-fx-border-radius : 100%;
+	-fx-border-color : #596575;
+	-fx-border-width : 3px;
+}
+.online{
+	-fx-background-color : #00CC33;
+	-fx-background-radius : 100%;
+}
+.awesome{
+	-fx-background-color : transparent;
+	-fx-background-radius : 0px;
+	-fx-text-fill : transparent;
+}
+.iconsitem{
+	-fx-fill : #596575;
+}
+.awesome:hover{
+	-fx-background-color : #F3A978;
+}
+.awesome:hover .iconsitem{
+	-fx-fill : white;
+}
+.btn{
+	-fx-background-color : #05071F;
+	-fx-fill : #e7e5e5;
+}
+.menu{
+	-fx-background-color : #05071F;
+}
+.white{
+	-fx-fill : white;
+}
+.btn:hover{
+	-fx-background-color : #10165F;
+}
+.btn:pressed{
+	-fx-background-color : #1620A1;
+}
+.container,.listall,.info,.titre,.elements{
+	-fx-background-color : #02030A;
+	-fx-text-fill : white;
+	-fx-fill : white;
+}
+.dark{
+	-fx-text-fill : white;
+}
+.search{
+	-fx-border-color : #fff;
+	-fx-background-radius : 5em;
+	-fx-border-radius : 2em;
+	-fx-text-fill : white;
+}
+.iconsearch{
+	-fx-fill : white;
+}
+.scroll-pane {
+    -fx-background-color: #02030A;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #10165F;
+    -fx-background-radius: 5em;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: black;
+}
+
+.tree-table-view{
+    -fx-tree-table-color: rgba(0, 150, 0, 0.8);
+    -fx-tree-table-rippler-color : rgba(255, 0, 0, 0.9);
+}
+.tree-table-view:focused .tree-table-row-cell:selected {
+    -fx-background-color: -fx-tree-table-color  ;
+    -fx-table-cell-border-color: -fx-tree-table-color;
+}
+
+.tree-table-view:focused .tree-table-row-cell:selected .tree-table-cell{
+    -fx-text-fill: white;
+}
+
+.tree-table-view .jfx-rippler {
+    -fx-rippler-fill: -fx-tree-table-rippler-color;
+}
+
+.tree-table-view .column-header ,
+.tree-table-view .column-header-background,
+.tree-table-view .column-header-background .filler{
+    -fx-background-color:TRANSPARENT;
+}
+
+.tree-table-view .column-header{
+    -fx-border-width : 0 1 0 1;
+    -fx-border-color: #F3F3F3;
+}
+
+.tree-table-view .column-header .label {
+    -fx-text-fill : #949494;
+    -fx-padding : 16 0 16 0 ;
+}
+
+.tree-table-view .column-header .arrow, .tree-table-view .column-header .sort-order-dot{ 
+    -fx-background-color : #949494;
+}
+
+.tree-table-view .column-header:last-visible {
+    -fx-border-width: 0 2 0 1;
+}
+
+.tree-table-view .column-header-background{
+    -fx-border-width : 0 0.0 1 0;
+    -fx-border-color:#F3F3F3;
+}
+
+.tree-table-view .tree-table-cell{
+    -fx-border-width:0 0 0 0;
+    -fx-padding : 16 0 16 0 ;
+}
+
+.tree-table-view .column-overlay{
+    -fx-background-color: -fx-tree-table-color;
+}
+
+.tree-table-view .column-resize-line, .tree-table-view .column-drag-header{
+    -fx-background-color: -fx-tree-table-rippler-color;
+}
+
+.tree-table-view:focused {
+    -fx-background-color: -fx-tree-table-color,-fx-box-border,-fx-control-inner-background;
+    -fx-background-insets: -1.4, 0, 1;
+    -fx-background-radius: 1.4, 0, 0;
+    /*....*/
+    -fx-padding: 1; /* 0.083333em; */
+}
+
+.tree-table-row-cell > .tree-disclosure-node > .arrow {
+    -fx-background-color: -fx-text-fill;
+    -fx-padding: 0.333333em 0.229em 0.333333em 0.229em; /* 4 */
+    -fx-shape: "M 0 -3.5 L 4 0 L 0 3.5 z";
+}
+.tree-table-row-cell .jfx-text-field{
+    -fx-focus-color: rgba(240,40,40);
+}
+.tree-table-cell .delete-button {
+    -fx-text-fill: red;
+}
+.tree-table-cell .update-button {
+    -fx-text-fill: black;
+}
+

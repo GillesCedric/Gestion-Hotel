@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="450.0" styleClass="dark-panel" stylesheets="@../application/css/Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ListVehiculeUserController">
+   <children>
+      <JFXButton fx:id="cancelButton" layoutX="299.0" layoutY="378.0" prefHeight="40.0" prefWidth="100.0" styleClass="buttons" text="CANCEL">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="137.0" layoutY="35.0" prefHeight="40.0" prefWidth="212.0" text="LISTE DES UTILISATEURS" textFill="#f5f2f2">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TreeTableView fx:id="listeUser" layoutX="17.0" layoutY="97.0" prefHeight="260.0" prefWidth="412.0">
+        <columns>
+          <TreeTableColumn prefWidth="75.0" text="C1" />
+          <TreeTableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TreeTableView>
+   </children>
+</AnchorPane>

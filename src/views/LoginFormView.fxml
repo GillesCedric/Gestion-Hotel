@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.validation.RequiredFieldValidator?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #201; -fx-background-radius: 10.0px;" stylesheets="@../application/css/application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginFormController">
+	<children>
+		<ImageView fitHeight="416.0" fitWidth="716.0" layoutX="-7.0" layoutY="-7.0" pickOnBounds="true">
+			<image>
+				<Image url="@../application/img/872716.jpg" />
+			</image>
+		</ImageView>
+		<AnchorPane layoutX="358.0" layoutY="27.0" opacity="0.8" prefHeight="346.0" prefWidth="314.0" style="-fx-background-color: #9C2827; -fx-border-radius: 25px;">
+			<children>
+				<Label alignment="CENTER" layoutX="70.0" layoutY="29.0" prefHeight="18.0" prefWidth="186.0" text="Panel d'authentification" textAlignment="CENTER" textFill="#fffefe">
+					<font>
+						<Font size="16.0" />
+					</font>
+				</Label>
+				<Label fx:id="forgotPassword" alignment="CENTER" layoutX="70.0" layoutY="300.0" onMouseClicked="#handleforgotPasswordAction" prefHeight="18.0" prefWidth="186.0" text="Mot de passe oublié ?" textAlignment="CENTER" textFill="#fffdfd" />
+				<JFXButton id="input-button" fx:id="loginButton" alignment="CENTER" layoutX="34.0" layoutY="246.0" onMouseClicked="#handleloginButtonClicked" prefHeight="37.0" prefWidth="250.0" styleClass="input" text="SE CONNECTER" textFill="WHITE" />
+				<JFXPasswordField fx:id="passwordUser" layoutX="34.0" layoutY="171.0" prefHeight="31.0" prefWidth="250.0" promptText="Votre mot de passe" styleClass="input">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</JFXPasswordField>
+				<RequiredFieldValidator layoutX="256.0" layoutY="187.0" message="Champ Requis" />
+				<JFXTextField fx:id="loginUser" layoutX="34.0" layoutY="111.0" prefHeight="31.0" prefWidth="250.0" promptText="Votre Login" styleClass="input">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</JFXTextField>
+			</children>
+		</AnchorPane>
+		<Label alignment="CENTER" layoutX="42.0" layoutY="62.0" prefHeight="62.0" prefWidth="291.0" styleClass="describe" text="Bienvenue dans notre application de gestion de l'hôtel hotel.beta" textAlignment="CENTER" textFill="#fcfafa" wrapText="true">
+			<font>
+				<Font name="Lucida Calligraphy Italic" size="14.0" />
+			</font>
+		</Label>
+		<ImageView fitHeight="150.0" fitWidth="200.0" layoutX="100.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../application/img/logoresto.png" />
+			</image>
+		</ImageView>
+		<JFXSpinner layoutX="162.0" layoutY="311.0" />
+      <FontAwesomeIcon fx:id="lockdownButton" glyphName="TIMES" layoutX="683.0" layoutY="18.0" size="1.5em" styleClass="iconsearch" wrappingWidth="16.714285850524902" />
+	</children>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="450.0" styleClass="dark-panel" stylesheets="@../application/css/Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SettingFormController">
+	<children>
+		<HBox alignment="CENTER_LEFT" layoutX="278.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="450.0" styleClass="dark-panel" AnchorPane.bottomAnchor="460.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<opaqueInsets>
+				<Insets top="10.0" />
+			</opaqueInsets>
+			<children>
+				<JFXButton fx:id="settingButton" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#open_setting" prefHeight="60.0" prefWidth="70.0" styleClass="main-btns">
+					<HBox.margin>
+						<Insets left="35.0" />
+					</HBox.margin>
+					<graphic>
+						<FontAwesomeIcon glyphName="GEAR" size="2em" styleClass="icons" />
+					</graphic>
+				</JFXButton>
+				<JFXButton fx:id="userButton" alignment="CENTER" contentDisplay="CENTER" layoutX="40.0" layoutY="25.0" onMouseClicked="#open_user" prefHeight="60.0" prefWidth="70.0" styleClass="main-btns">
+					<graphic>
+						<FontAwesomeIcon glyphName="USER" size="2em" styleClass="icons" />
+					</graphic>
+					<HBox.margin>
+						<Insets left="35.0" />
+					</HBox.margin>
+				</JFXButton>
+				<JFXButton fx:id="homeButton" alignment="CENTER" contentDisplay="CENTER" layoutX="110.0" layoutY="25.0" onMouseClicked="#open_home" prefHeight="60.0" prefWidth="70.0" styleClass="main-btns">
+					<graphic>
+						<FontAwesomeIcon glyphName="PLUS" size="2em" styleClass="icons" />
+					</graphic>
+					<HBox.margin>
+						<Insets left="35.0" />
+					</HBox.margin>
+				</JFXButton>
+				<JFXButton fx:id="barchartButton" alignment="CENTER" contentDisplay="CENTER" layoutX="180.0" layoutY="25.0" onMouseClicked="#open_bar_chart" prefHeight="60.0" prefWidth="70.0" styleClass="main-btns">
+					<graphic>
+						<FontAwesomeIcon glyphName="GROUP" size="2em" styleClass="icons" />
+					</graphic>
+					<HBox.margin>
+						<Insets left="35.0" />
+					</HBox.margin>
+				</JFXButton>
+			</children>
+		</HBox>
+		<Pane fx:id="pane" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="450.0" styleClass="parent" />
+      <JFXProgressBar layoutY="89.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="450.0" />
+	</children>
+</AnchorPane>
